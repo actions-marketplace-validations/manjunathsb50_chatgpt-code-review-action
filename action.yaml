@@ -1,5 +1,6 @@
 name: ChatGPT OpenAI CodeReview
 description: A GitHub Action that uses OpenAI ChatGPT to review code in pull request.
+icon: box
 inputs:
   PROGRAMMING_LANGUAGE:
     description: 'The programming language used in the GitHub repository. If not provided, the detected programming language will be used.'
