@@ -61,7 +61,7 @@ on:
 jobs:
   code-review:
     runs-on: ubuntu-latest
-    if: github.event.comment.user.login == 'manjunathsb10' && startsWith(github.event.comment.body, 'chatgpt')
+    if: github.event.comment.user.login == 'manjunathsb50' && startsWith(github.event.comment.body, 'chatgpt')
     steps:
     - name: OpenAI ChatGPT Code Review
       uses: manjunathsb10/chatgpt-code-review-action@v0.2
