@@ -10,7 +10,7 @@ To use this action in your workflow, add the following step:
 
 ```yaml
 name: OpenAI ChatGPT Code Review
-uses: manjunathsb10/chatgpt-code-review-action@v0.2
+uses: manjunathsb50/chatgpt-code-review-action@v0.2
 with:
     PROGRAMMING_LANGUAGE: 'JavaScript'
     REVIEW_COMMENT_PREFIX: 'chatgpt:'
@@ -64,7 +64,7 @@ jobs:
     if: github.event.comment.user.login == 'manjunathsb50' && startsWith(github.event.comment.body, 'chatgpt')
     steps:
     - name: OpenAI ChatGPT Code Review
-      uses: manjunathsb10/chatgpt-code-review-action@v0.2
+      uses: manjunathsb50/chatgpt-code-review-action@v0.2
       with:
         PROGRAMMING_LANGUAGE: 'JavaScript'
         OPENAI_TOKEN: ${{ secrets.OPENAI_TOKEN }}
