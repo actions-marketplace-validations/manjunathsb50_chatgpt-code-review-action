@@ -107,7 +107,7 @@ async function run() {
         'Authorization': `Bearer ${openaiToken}`
       }
     })).then(data => {
-     console.log("done")
+     console.log("success")
   })
   .catch(error => {
      console.log(error.response.data.error)
