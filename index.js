@@ -106,7 +106,12 @@ async function run() {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${openaiToken}`
       }
-    }));
+    })).then(data => {
+     console.log("done")
+  })
+  .catch(error => {
+     console.log(error.response.data.error)
+  });
 
     const answer = response.data.choices[0].message.content;
     core.debug(`openai response: ${answer}`);
